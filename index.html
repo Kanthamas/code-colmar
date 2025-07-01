@@ -11,9 +11,9 @@
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-			* {
+			/* * {
 				outline: solid red 1px;
-			}
+			} */
 
 			body {
 				font-family: "Poppins", sans-serif;
@@ -92,20 +92,20 @@
 		</header>
 		<main>
 			<section
-				class="flex flex-col hero bg-neutral-200 md:flex-row md:px-6 md:py-8 md:gap-6"
+				class="flex flex-col hero bg-neutral-200 md:flex-row md:pl-6 md:py-8 md:gap-6"
 			>
 				<div class="md:flex-6">
 					<img
 						src="./images/banner.jpg"
 						alt="Three students are studying together at the table"
-						class="object-cover w-full object-cove"
+						class="object-cover h-auto max-w-full"
 					/>
 				</div>
 				<div
 					class="px-4 py-8 md:flex-4 md:px-0 md:flex md:flex-col md:justify-center"
 				>
 					<h1
-						class="text-4xl font-bold text-neutral-600 text-balance lg:w-8/10 xl:text-6xl"
+						class="text-4xl font-bold text-neutral-600 text-balance lg:w-8/10 xl:text-5xl"
 					>
 						Learn something new everyday
 					</h1>
@@ -122,7 +122,9 @@
 				</div>
 			</section>
 
-			<section class="px-6 py-8 information bg-neutral-100 md:flex md:gap-6">
+			<section
+				class="p-4 mb-4 information bg-neutral-100 md:flex md:gap-6 md:pr-0"
+			>
 				<div class="hidden md:flex md:flex-6">
 					<div class="">
 						<img
@@ -144,7 +146,9 @@
 					</div>
 				</div>
 				<div class="md:flex-4">
-					<div class="flex flex-col info__card md:flex-row">
+					<div
+						class="flex flex-col info__card md:flex-row md:hover:bg-neutral-300"
+					>
 						<div class="md:max-w-[35%] md:px-4">
 							<img
 								src="./images/information-orientation-mobile.jpg"
@@ -170,7 +174,9 @@
 						</div>
 					</div>
 
-					<div class="flex flex-col info__card md:flex-row">
+					<div
+						class="flex flex-col info__card md:flex-row md:hover:bg-neutral-300"
+					>
 						<div class="md:max-w-[35%] md:px-4">
 							<img
 								src="./images/information-campus-mobile.jpg"
@@ -196,7 +202,9 @@
 						</div>
 					</div>
 
-					<div class="flex flex-col info__card md:flex-row">
+					<div
+						class="flex flex-col info__card md:flex-row md:hover:bg-neutral-300"
+					>
 						<div class="md:max-w-[35%] md:px-4">
 							<img
 								src="./images/information-guest-lecture-mobile.jpg"
@@ -232,7 +240,9 @@
 				</h2>
 				<div class="flex flex-col gap-2 md:gap-8">
 					<div class="flex flex-col gap-2 md:gap-8 md:flex-row">
-						<div class="md:flex md:flex-col md:flex-1">
+						<div
+							class="shadow-md md:flex md:flex-col md:flex-1 md:outline-1 md:outline-neutral-300 bg-neutral-50 md:hover:scale-102 md:cursor-pointer"
+						>
 							<div class="hidden md:block">
 								<img
 									src="./images/course-software.jpg"
@@ -242,7 +252,7 @@
 							</div>
 							<div class="md:flex md:flex-col md:px-4 md:pt-4 md:pb-6">
 								<h3
-									class="px-4 pt-4 pb-6 text-2xl font-semibold text-neutral-600 bg-neutral-200 md:bg-neutral-100 md:px-0"
+									class="px-4 pt-4 pb-6 text-2xl font-semibold text-neutral-600 bg-neutral-200 md:bg-neutral-100 md:px-0 hover:bg-neutral-300 hover:cursor-pointer md:hover:bg-neutral-100"
 								>
 									Software engineering
 								</h3>
@@ -253,7 +263,9 @@
 							</div>
 						</div>
 
-						<div class="md:flex md:flex-col md:flex-1">
+						<div
+							class="shadow-md md:flex md:flex-col md:flex-1 md:outline-1 md:outline-neutral-300 bg-neutral-50 md:hover:scale-102 md:cursor-pointer"
+						>
 							<div class="hidden md:block">
 								<img
 									src="./images/course-computer-art.jpg"
@@ -263,7 +275,7 @@
 							</div>
 							<div class="md:flex md:flex-col md:px-4 md:pt-4 md:pb-6">
 								<h3
-									class="px-4 pt-4 pb-6 text-2xl font-semibold text-neutral-600 bg-neutral-200 md:bg-neutral-100 md:px-0"
+									class="px-4 pt-4 pb-6 text-2xl font-semibold text-neutral-600 bg-neutral-200 md:bg-neutral-100 md:px-0 hover:bg-neutral-300 hover:cursor-pointer md:hover:bg-neutral-100"
 								>
 									Computer art
 								</h3>
@@ -275,7 +287,9 @@
 							</div>
 						</div>
 
-						<div class="md:flex md:flex-col md:flex-1">
+						<div
+							class="shadow-md md:flex md:flex-col md:flex-1 md:outline-1 md:outline-neutral-300 bg-neutral-50 md:hover:scale-102 md:cursor-pointer"
+						>
 							<div class="hidden md:block">
 								<img
 									src="./images/course-design.jpg"
@@ -285,7 +299,7 @@
 							</div>
 							<div class="md:flex md:flex-col md:px-4 md:pt-4 md:pb-6">
 								<h3
-									class="px-4 pt-4 pb-6 text-2xl font-semibold text-neutral-600 bg-neutral-200 md:bg-neutral-100 md:px-0"
+									class="px-4 pt-4 pb-6 text-2xl font-semibold text-neutral-600 bg-neutral-200 md:bg-neutral-100 md:px-0 hover:bg-neutral-300 hover:cursor-pointer md:hover:bg-neutral-100"
 								>
 									Design
 								</h3>
@@ -298,7 +312,9 @@
 					</div>
 
 					<div class="flex flex-col gap-2 md:gap-8 md:flex-row">
-						<div class="md:flex md:flex-col md:flex-1">
+						<div
+							class="shadow-md md:flex md:flex-col md:flex-1 md:outline-1 md:outline-neutral-300 bg-neutral-50 md:hover:scale-102 md:cursor-pointer"
+						>
 							<div class="hidden md:block">
 								<img
 									src="./images/course-data.jpg"
@@ -308,7 +324,7 @@
 							</div>
 							<div class="md:flex md:flex-col md:px-4 md:pt-4 md:pb-6">
 								<h3
-									class="px-4 pt-4 pb-6 text-2xl font-semibold text-neutral-600 bg-neutral-200 md:bg-neutral-100 md:px-0 md:pb-4"
+									class="px-4 pt-4 pb-6 text-2xl font-semibold text-neutral-600 bg-neutral-200 md:bg-neutral-100 md:px-0 md:pb-4 hover:bg-neutral-300 hover:cursor-pointer md:hover:bg-neutral-100"
 								>
 									Data
 								</h3>
@@ -319,7 +335,9 @@
 							</div>
 						</div>
 
-						<div class="md:flex md:flex-col md:flex-1">
+						<div
+							class="shadow-md md:flex md:flex-col md:flex-1 md:outline-1 md:outline-neutral-300 bg-neutral-50 md:hover:scale-102 md:cursor-pointer0"
+						>
 							<div class="hidden md:block">
 								<img
 									src="./images/course-business.jpg"
@@ -329,7 +347,7 @@
 							</div>
 							<div class="md:flex md:flex-col md:px-4 md:pt-4 md:pb-6">
 								<h3
-									class="px-4 pt-4 pb-6 text-2xl font-semibold text-neutral-600 bg-neutral-200 md:bg-neutral-100 md:px-0"
+									class="px-4 pt-4 pb-6 text-2xl font-semibold text-neutral-600 bg-neutral-200 md:px-0 md:bg-neutral-100 hover:bg-neutral-300 hover:cursor-pointer md:hover:bg-neutral-100"
 								>
 									Business
 								</h3>
@@ -340,7 +358,9 @@
 							</div>
 						</div>
 
-						<div class="md:flex md:flex-col md:flex-1">
+						<div
+							class="shadow-md md:flex md:flex-col md:flex-1 md:outline-1 md:outline-neutral-300 bg-neutral-50 md:hover:scale-102 md:cursor-pointer"
+						>
 							<div class="hidden md:block">
 								<img
 									src="./images/course-marketing.jpg"
@@ -350,7 +370,7 @@
 							</div>
 							<div class="md:flex md:flex-col md:px-4 md:pt-4 md:pb-6">
 								<h3
-									class="px-4 pt-4 pb-6 text-2xl font-semibold text-neutral-600 bg-neutral-200 md:bg-neutral-100 md:px-0"
+									class="px-4 pt-4 pb-6 text-2xl font-semibold text-neutral-600 bg-neutral-200 md:bg-neutral-100 md:px-0 hover:bg-neutral-300 hover:cursor-pointer md:hover:bg-neutral-100"
 								>
 									Marketing
 								</h3>
@@ -364,7 +384,7 @@
 				</div>
 			</section>
 
-			<section class=" thesis bg-neutral-100 md:px-18">
+			<section class="thesis bg-neutral-100 md:pl-6">
 				<h2
 					class="pt-8 pb-4 text-4xl font-semibold text-center text-neutral-600 md:text-5xl md:pb-8"
 				>
@@ -394,7 +414,7 @@
 
 					<div class="hidden md:block md:flex-4">
 						<div
-							class="flex flex-col info__card md:flex-row md:hover:bg-neutral-300"
+							class="flex flex-col thesis__card md:flex-row md:hover:bg-neutral-300"
 						>
 							<div class="md:max-w-[35%] md:px-4">
 								<img
@@ -403,7 +423,9 @@
 									class="hidden h-auto md:block md:py-4"
 								/>
 							</div>
-							<div class="px-4 md:flex md:flex-col md:justify-center md:px-0">
+							<div
+								class="px-4 md:flex md:flex-col md:justify-center md:px-0 md:flex-1"
+							>
 								<h3
 									class="pt-6 text-2xl font-semibold text-neutral-600 md:pt-0"
 								>
@@ -415,7 +437,9 @@
 							</div>
 						</div>
 
-						<div class="flex flex-col info__card md:flex-row">
+						<div
+							class="flex flex-col thesis__card md:flex-row md:hover:bg-neutral-300"
+						>
 							<div class="md:max-w-[35%] md:px-4">
 								<img
 									src="./images/thesis-now-and-then.jpg"
@@ -423,7 +447,9 @@
 									class="hidden h-auto md:block md:py-4"
 								/>
 							</div>
-							<div class="px-4 md:flex md:flex-col md:justify-center md:px-0">
+							<div
+								class="px-4 md:flex md:flex-col md:justify-center md:px-0 md:flex-1"
+							>
 								<h3
 									class="pt-6 text-2xl font-semibold text-neutral-600 md:pt-0"
 								>
@@ -440,7 +466,7 @@
 		</main>
 
 		<footer
-			class="flex items-center justify-between w-full h-auto px-6 text-sm border-t bg-neutral-100 text-neutral-400 border-neutral-200 md:mb-4 "
+			class="flex items-center justify-between w-full h-auto px-6 text-sm border-t bg-neutral-100 text-neutral-400 border-neutral-200 md:mb-4"
 		>
 			<span class="py-4">&copy; 2016 Colmar Academy. All rights reserved.</span>
 			<div class="hidden gap-4 md:flex">
